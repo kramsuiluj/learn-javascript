@@ -1,16 +1,27 @@
-let age = 21;
-let year = 2021;
+// strings
+console.log('hello, world');
+let email = 'mjmaravillo@gmail.com';
 
-console.log(age, year);
+console.log(email);
 
-age = 30;
+// string concatination
+let firstName = 'Mark';
+let lastName = 'Maravillo';
+let fullName = firstName + ' ' + lastName;
 
-console.log(age);
+console.log(fullName);
 
-const points = 100;
+// getting characters
+console.log(fullName[0]);
 
-console.log(points);
+// string length
+console.log(fullName.length);
 
-var score = 75;
+// string methods
+console.log(fullName.toUpperCase());
 
-console.log(score);
+let result = fullName.toLowerCase();
+console.log(result);
+
+let index = email.indexOf('@');
+console.log(index);
