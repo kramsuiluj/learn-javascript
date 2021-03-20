@@ -1,15 +1,34 @@
-// common string methods
+//  numbers
 
-let email = 'mjmaravillo@gmail.com';
+let radius = 10;
+const pi = 3.14;
 
-// let result = email.lastIndexOf('m');
+// console.log(radius, pi);
 
-// let result = email.slice(0, 10);
+// math operators +, -, *, /, **, %
 
-// let result = email.substr(0, 15);
+// console.log(10 / 2);
 
-// let result = email.replace('m', 'w');
+// let result = radius % 3;
 
-// let result = email.replace('a', 'w');
+// let result = pi * radius**2;
+
+// order of operation - B I D M A S
+
+// let result = 5 * (10-3)**2;
+
+// console.log(result);
+
+let likes = 10;
+
+// likes += 10;
+
+// console.log(likes);
+
+// NaN - not a number
+
+// console.log(1 / 'hmm');
+
+let result = 'the blog has ' + likes + ' likes.';
 
 console.log(result);
