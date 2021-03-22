@@ -1,34 +1,21 @@
-//  numbers
+// template strings
+const title = 'Best reads of 2019';
+const author = 'Mario';
+const likes = 30;
 
-let radius = 10;
-const pi = 3.14;
-
-// console.log(radius, pi);
-
-// math operators +, -, *, /, **, %
-
-// console.log(10 / 2);
-
-// let result = radius % 3;
-
-// let result = pi * radius**2;
-
-// order of operation - B I D M A S
-
-// let result = 5 * (10-3)**2;
-
+// concatenation array
+// let result = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes.';
 // console.log(result);
 
-let likes = 10;
-
-// likes += 10;
-
-// console.log(likes);
-
-// NaN - not a number
-
-// console.log(1 / 'hmm');
-
-let result = 'the blog has ' + likes + ' likes.';
-
+// template string way
+result = `The blog called ${title} by ${author} has ${likes} likes.`;
 console.log(result);
+
+// creating html templates
+let html = `
+    <h2>${title}</h2>
+    <p>By ${author}</p>
+    <span>This blog has ${likes} likes.</span>
+`;
+
+console.log(html);
