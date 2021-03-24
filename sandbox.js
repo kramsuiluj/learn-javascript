@@ -1,12 +1,22 @@
 // object literal notations
 
+// const blogs = [
+//     {title: 'why mac & cheese rules', likes: 30},
+//     {title: '10 things to make with marmite', likes: 50}
+// ];
+
+// console.log(blogs);
+
 let user = {
 
     name: 'diana',
     age: 21,
     email: 'diana@gmail.com',
     location: 'Philippines',
-    blogs: ['why mac & cheese rules', '10 things to make with marmite'],
+    blogs: [
+        {title: 'why mac & cheese rules', likes: 30},
+        {title: '10 things to make with marmite', likes: 50}
+    ],
 
     login: () => {
         console.log('The user logged in');
@@ -29,12 +39,12 @@ let user = {
     //     });
     // }
 
-    logBlogs: function(){
-        console.log('This user has written the following blogs:');
-        this.blogs.forEach(blog => {
-            console.log(blog);
-        });
-    }
+    // logBlogs: function(){
+    //     console.log('This user has written the following blogs:');
+    //     this.blogs.forEach(blog => {
+    //         console.log(blog);
+    //     });
+    // }
 
     // logBlogs: () => {
     //     console.log('This user has written the following blogs:');
@@ -42,6 +52,15 @@ let user = {
     //         console.log(blog);
     //     });
     // }
+
+    logBlogs(){
+        console.log('This user has written the following blogs:');
+        this.blogs.forEach(blog => {
+
+            console.log(`Title: ${blog.title} | Likes: ${blog.likes}`);
+
+        });
+    }
 
 };
 
