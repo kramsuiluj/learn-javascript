@@ -1,18 +1,14 @@
-// variables and block scope
-const age = 30;
+// function declaration
 
-// const age = 50;
 
-if(true) {
-    const age = 40;
-    const name = 'shaun'
-    console.log('inside first code block: ', age, name);
+// function expression
+const speak = function(){
+    console.log('Good Day!');
+};
 
-    if(true){
-        const age = 50;
-        console.log('inside 2nd code block: ', age);
-    }
+greet();
+speak();
 
+function greet(){
+    console.log('Hello there!');
 }
-
-console.log('outside code block: ', age, name);
