@@ -1,71 +1,17 @@
-// object literal notations
+// Math Object
 
-// const blogs = [
-//     {title: 'why mac & cheese rules', likes: 30},
-//     {title: '10 things to make with marmite', likes: 50}
-// ];
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
-// console.log(blogs);
+const area = 7.7;
+console.log(Math.round(area)); // Rounds off an integer.
+console.log(Math.floor(area)); // Floors the integer.
+console.log(Math.ceil(area)); // Ceil the integer.
+console.log(Math.trunc(area)); // Take away the decimal and leave the integer.
 
-let user = {
+// Random Numbers
 
-    name: 'diana',
-    age: 21,
-    email: 'diana@gmail.com',
-    location: 'Philippines',
-    blogs: [
-        {title: 'why mac & cheese rules', likes: 30},
-        {title: '10 things to make with marmite', likes: 50}
-    ],
+const random = Math.random();
 
-    login: () => {
-        console.log('The user logged in');
-    },
-
-    logout: () => {
-        console.log('The user logged out');
-    },
-
-    // my correct solution
-    // logBlogs: blogs => {
-    //     blogs.forEach(blog => {
-    //         console.log(blog);
-    //     });
-    // }
-
-    // logBlogs: () => {
-    //     this.blogs.forEach(blog => {
-    //         console.log(blog);
-    //     });
-    // }
-
-    // logBlogs: function(){
-    //     console.log('This user has written the following blogs:');
-    //     this.blogs.forEach(blog => {
-    //         console.log(blog);
-    //     });
-    // }
-
-    // logBlogs: () => {
-    //     console.log('This user has written the following blogs:');
-    //     this.blogs.forEach(blog => {
-    //         console.log(blog);
-    //     });
-    // }
-
-    logBlogs(){
-        console.log('This user has written the following blogs:');
-        this.blogs.forEach(blog => {
-
-            console.log(`Title: ${blog.title} | Likes: ${blog.likes}`);
-
-        });
-    }
-
-};
-
-// user.login();
-// user.logout();
-// user.logBlogs(user.blogs); // my correct solution
-// user.logBlogs();
-user.logBlogs();
+console.log(Math.round(random * 100));
