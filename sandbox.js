@@ -1,26 +1,18 @@
-// switch statements
+// variables and block scope
+const age = 30;
 
-const grade = '1';
+// const age = 50;
 
-switch(grade) {
+if(true) {
+    const age = 40;
+    const name = 'shaun'
+    console.log('inside first code block: ', age, name);
 
-    case 'A':
-        console.log('You got an A!');
-        break;
-    case 'B':
-        console.log('You got an B!');
-        break;
-    case 'C':
-        console.log('You got an C!');
-        break;
-    case 'D':
-        console.log('You got an D!');
-        break;
-    case 'E':
-        console.log('You got an E!');
-        break;
-    default:
-        console.log('Not a valid grade!');
+    if(true){
+        const age = 50;
+        console.log('inside 2nd code block: ', age);
+    }
 
 }
 
+console.log('outside code block: ', age, name);
