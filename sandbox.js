@@ -1,31 +1,20 @@
-// arrays
+// for loops
 
-let ninjas = ['shaun', 'ryu', 'chun-li'];
-// ninjas.push('test');
+// for (let i = 0; i < 5; i++) {
 
-// console.log(ninjas);
+//     console.log('in loop: ', i);
 
-// ninjas[1] = 'ken';
-// console.log(ninjas[1]);
+// }
 
-// let ages = [20, 25, 30, 35];
-// console.log(ages[2]);
+// console.log('loop finished');
 
-// let random = ['shaun', 'crystal', 30, 20];
+const names = ['shaun', 'mario', 'luigi'];
 
-// console.log(random[3]);
+for (let i = 0; i < names.length; i++) {
 
-// console.log(ninjas.length);
+    // console.log(names[i]);
 
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
 
-// Array Methods
-
-// let result = ninjas.join(', ');
-// let result = ninjas.indexOf('chun-li');
-// let result = ninjas.concat(['ken', 'crystal']);
-let result = ninjas.push('ken');
-result = ninjas.pop(); // return the value of the popped array.
-
-
-console.log(result);
-
+}
