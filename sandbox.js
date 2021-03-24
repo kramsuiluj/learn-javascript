@@ -1,33 +1,17 @@
-// if statements
+// else if statements
 
-// const age = 20;
+const password = 'passpass';
 
-// if (age > 20) {
+if (password.length >= 12) {
 
-//     console.log('You are over 20 years old.');
+    console.log('that password is mighty strong!');
 
-// } else {
+} else if (password.length >= 8) {
 
-
-
-// }
-
-// const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
-
-// if (ninjas.length > 3) {
-
-//     console.log("that's a lot of ninjas");
-
-// }
-
-const password = 'pass';
-
-if (password.length >= 8) {
-
-    console.log('that password is long enough');
+    console.log('that password is long enough!');
 
 } else {
 
-    
+    console.log('password is not long enough!');
 
 }
