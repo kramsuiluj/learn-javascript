@@ -1,14 +1,24 @@
-// get element by ID
-// const title = document.getElementById('page-title');
-// console.log(title);
+const para = document.querySelector('p');
 
+// console.log(para.innerText);
+// para.innerText = 'I am awesome.';
 
-// get elements by their class name
-// const errors = document.getElementsByClassName('error');
-// console.log(errors[1]);
+const paras = document.querySelectorAll('p');
 
+// paras.forEach(para => {
+//     console.log(para.innerText);
+//     para.innerText += ' new text';
+// });
 
-// get element by their tag name
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[1]);
+const content = document.querySelector('.content');
+
+// console.log(content.innerHTML);
+// content.innerHTML += '<h2>This is a new H2!</h2>';
+
+const people = ['mario', 'luigi', 'yoshi'];
+
+people.forEach(person => {
+
+    content.innerHTML += `<li>${person}</li>`;
+
+});
