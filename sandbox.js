@@ -1,13 +1,10 @@
-const link = document.querySelector('a');
+const title = document.querySelector('h1');
+// title.setAttribute('style', 'margin: 50px;');
 
-console.log(link.getAttribute('href'));
-link.setAttribute('href', 'https://www.thenetninja.co.uk');
-link.innerText = 'The Net Ninja Website';
+console.log(title.style);
+console.log(title.style.color);
 
-const message = document.querySelector('p');
-console.log(message.getAttribute('class'));
-message.setAttribute('class', 'success');
-message.innerText = 'This is a success message';
-
-message.setAttribute('style', 'color: red;');
-// message.setAttribute('class', 'test');
+title.style.margin = '50px';
+title.style.color = 'crimson';
+title.style.fontSize = '50px';
+title.style.margin = '';
