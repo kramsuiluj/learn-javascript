@@ -1,21 +1,31 @@
-// Primitive Values
+// document object model
 
-// let scoreOne = 50;
-// let scoreTwo = scoreOne;
+// const para = document.querySelector('p'); // Getting the first p tag in the heirarchy.
+// const para = document.querySelector('.error'); // Getting any element with the class of '.error'
+// const para = document.querySelector('div.error'); // Getting the specific element with the class of '.error'
 
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+/* Note:Getting the unique selector of an element.
 
-// scoreOne = 100;
+1. Right click the HTML element in the browser then click inspect.
+2. Right click the highlighted line of code then click copy and choose copy selector.
 
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+*/
 
-// Reference Values
+// console.log(para);
 
-const userOne = { name: 'ryu', age: 30 };
-const userTwo = userOne;
+// const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
 
-console.log(userOne, userTwo);
+// paras.forEach(para => {
 
-userOne['age'] = 40;
-userOne.name = 'Diana';
-console.log(userOne, userTwo);
+//     console.log(para);
+
+// });
+
+// console.log(paras[0]);
+
+// console.log(errors);
+
+errors.forEach(error => {
+    console.log(error);
+});
